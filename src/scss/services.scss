@@ -1,0 +1,41 @@
+
+.services__title {
+  display: flex;
+  font-family: $TTLakes;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: $color_2;
+  padding: 16px;
+}
+.services__header {
+  width: 100%;
+  background: linear-gradient(180deg, $background-color_2 0%, $background-color_3 100%);
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: $border-color_1;
+}
+.brands__pagination {
+  position: relative;
+  top: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .section__slider {
+    padding-bottom: 8px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+  }
+
+
+}
+@media screen and (min-width: 1120px) {
+
+}
+@media screen and (min-width: 1440px) {
+
+}

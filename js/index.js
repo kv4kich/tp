@@ -1,4 +1,4 @@
-import '../scss/style.scss'
+import '../scss/style.css'
 
 import '../js/slider'
 import '../js/show-more.js'

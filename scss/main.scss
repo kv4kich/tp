@@ -100,4 +100,61 @@
   animation: slide-top 0.2s cubic-bezier(0.73, 0.02, 0.5, 1.02) reverse;
 }
 
+.cta {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
 
+.cta:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: $button-color;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: $TTLakes, sans-serif;
+  font-size: 18px;
+
+
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
